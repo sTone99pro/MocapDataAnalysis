@@ -1,0 +1,13 @@
+[
+  {
+    "session": 3,
+    "take": 14,
+    "num_wav": 0,
+    "num_bvh": 2,
+    "wavs": [],
+    "bvhs": [
+      "Session_03_Take_014_Act05_F.bvh",
+      "Session_03_Take_014_Act06_F.bvh"
+    ]
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "session": 1,
+    "take": 12,
+    "wav0": "Session_01_Take_012_Act01_M.wav",
+    "wav1": "Session_01_Take_012_Act02_M.wav",
+    "bvh0": "Session_01_Take_012_Act02_M.bvh",
+    "bvh1": "Session_01_Take_012_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 13,
+    "wav0": "Session_01_Take_013_Act01_M.wav",
+    "wav1": "Session_01_Take_013_Act02_M.wav",
+    "bvh0": "Session_01_Take_013_Act02_M.bvh",
+    "bvh1": "Session_01_Take_013_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 14,
+    "wav0": "Session_01_Take_014_Act01_M.wav",
+    "wav1": "Session_01_Take_014_Act02_M.wav",
+    "bvh0": "Session_01_Take_014_Act02_M.bvh",
+    "bvh1": "Session_01_Take_014_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 15,
+    "wav0": "Session_01_Take_015_Act01_M.wav",
+    "wav1": "Session_01_Take_015_Act02_M.wav",
+    "bvh0": "Session_01_Take_015_Act02_M.bvh",
+    "bvh1": "Session_01_Take_015_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 17,
+    "wav0": "Session_01_Take_017_Act01_M.wav",
+    "wav1": "Session_01_Take_017_Act02_M.wav",
+    "bvh0": "Session_01_Take_017_Act02_M.bvh",
+    "bvh1": "Session_01_Take_017_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 18,
+    "wav0": "Session_01_Take_018_Act01_M.wav",
+    "wav1": "Session_01_Take_018_Act02_M.wav",
+    "bvh0": "Session_01_Take_018_Act02_M.bvh",
+    "bvh1": "Session_01_Take_018_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 19,
+    "wav0": "Session_01_Take_019_Act01_M.wav",
+    "wav1": "Session_01_Take_019_Act02_M.wav",
+    "bvh0": "Session_01_Take_019_Act02_M.bvh",
+    "bvh1": "Session_01_Take_019_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 20,
+    "wav0": "Session_01_Take_020_Act01_M.wav",
+    "wav1": "Session_01_Take_020_Act02_M.wav",
+    "bvh0": "Session_01_Take_020_Act02_M.bvh",
+    "bvh1": "Session_01_Take_020_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 21,
+    "wav0": "Session_01_Take_021_Act01_M.wav",
+    "wav1": "Session_01_Take_021_Act02_M.wav",
+    "bvh0": "Session_01_Take_021_Act02_M.bvh",
+    "bvh1": "Session_01_Take_021_Act04_M.bvh"
+  },
+  {
+    "session": 1,
+    "take": 22,
+    "wav0": "Session_01_Take_022_Act01_M.wav",
+    "wav1": "Session_01_Take_022_Act02_M.wav",
+    "bvh0": "Session_01_Take_022_Act02_M.bvh",
+    "bvh1": "Session_01_Take_022_Act04_M.bvh"
+  },
+  {
+    "session": 2,
+    "take": 1,
+    "wav0": "Session_02_Take_001_Act03_F.wav",
+    "wav1": "Session_02_Take_001_Act04_M.wav",
+    "bvh0": "Session_02_Take_001_Act03_F.bvh",
+    "bvh1": "Session_02_Take_001_Act04_M.bvh"
+  },
+  {
+    "session": 2,
+    "take": 2,
+    "wav0": "Session_02_Take_002_Act03_F.wav",
+    "wav1": "Session_02_Take_002_Act04_M.wav",
+    "bvh0": "Session_02_Take_002_Act03_F.bvh",
+    "bvh1": "Session_02_Take_002_Act04_M.bvh"
+  },
+  {
+    "session": 2,
+    "take": 3,
+    "wav0": "Session_02_Take_003_Act03_F.wav",
+    "wav1": "Session_02_Take_003_Act04_M.wav",
+    "bvh0": "Session_02_Take_003_Act03_F.bvh",
+    "bvh1": "Session_02_Take_003_Act04_M.bvh"
+  },
+  {
+    "session": 2,
+    "take": 4,
+    "wav0": "Session_02_Take_004_Act03_F.wav",
+    "wav1": "Session_02_Take_004_Act04_M.wav",
+    "bvh0": "Session_02_Take_004_Act03_F.bvh",
+    "bvh1": "Session_02_Take_004_Act04_M.bvh"
+  },
+  {
+    "session": 2,
+    "take": 5,
+    "wav0": "Session_02_Take_005_Act03_F.wav",
+    "wav1": "Session_02_Take_005_Act04_M.wav",
+    "bvh0": "Session_02_Take_005_Act03_F.bvh",
+    "bvh1": "Session_02_Take_005_Act04_M.bvh"
+  },
+  {
+    "session": 2,
+    "take": 6,
+    "wav0": "Session_02_Take_006_Act03_F.wav",
+    "wav1": "Session_02_Take_006_Act04_M.wav",
+    "bvh0": "Session_02_Take_006_Act03_F.bvh",
+    "bvh1": "Session_02_Take_006_Act04_M.bvh"
+  },
+  {
+    "session": 2,
+    "take": 7,
+    "wav0": "Session_02_Take_007_Act03_F.wav",
+    "wav1": "Session_02_Take_007_Act04_M.wav",
+    "bvh0": "Session_02_Take_007_Act03_F.bvh",
+    "bvh1": "Session_02_Take_007_Act04_M.bvh"
+  },
+  {
+    "session": 3,
+    "take": 5,
+    "wav0": "Session_03_Take_005_Act05_F.wav",
+    "wav1": "Session_03_Take_005_Act06_F.wav",
+    "bvh0": "Session_03_Take_005_Act05_F.bvh",
+    "bvh1": "Session_03_Take_005_Act06_F.bvh"
+  },
+  {
+    "session": 3,
+    "take": 6,
+    "wav0": "Session_03_Take_006_Act05_F.wav",
+    "wav1": "Session_03_Take_006_Act06_F.wav",
+    "bvh0": "Session_03_Take_006_Act05_F.bvh",
+    "bvh1": "Session_03_Take_006_Act06_F.bvh"
+  },
+  {
+    "session": 3,
+    "take": 7,
+    "wav0": "Session_03_Take_007_Act05_F.wav",
+    "wav1": "Session_03_Take_007_Act06_F.wav",
+    "bvh0": "Session_03_Take_007_Act05_F.bvh",
+    "bvh1": "Session_03_Take_007_Act06_F.bvh"
+  },
+  {
+    "session": 3,
+    "take": 8,
+    "wav0": "Session_03_Take_008_Act05_F.wav",
+    "wav1": "Session_03_Take_008_Act06_F.wav",
+    "bvh0": "Session_03_Take_008_Act05_F.bvh",
+    "bvh1": "Session_03_Take_008_Act06_F.bvh"
+  },
+  {
+    "session": 3,
+    "take": 10,
+    "wav0": "Session_03_Take_010_Act05_F.wav",
+    "wav1": "Session_03_Take_010_Act06_F.wav",
+    "bvh0": "Session_03_Take_010_Act05_F.bvh",
+    "bvh1": "Session_03_Take_010_Act06_F.bvh"
+  },
+  {
+    "session": 3,
+    "take": 11,
+    "wav0": "Session_03_Take_011_Act05_F.wav",
+    "wav1": "Session_03_Take_011_Act06_F.wav",
+    "bvh0": "Session_03_Take_011_Act05_F.bvh",
+    "bvh1": "Session_03_Take_011_Act06_F.bvh"
+  },
+  {
+    "session": 3,
+    "take": 12,
+    "wav0": "Session_03_Take_012_Act05_F.wav",
+    "wav1": "Session_03_Take_012_Act06_F.wav",
+    "bvh0": "Session_03_Take_012_Act05_F.bvh",
+    "bvh1": "Session_03_Take_012_Act06_F.bvh"
+  },
+  {
+    "session": 3,
+    "take": 13,
+    "wav0": "Session_03_Take_013_Act05_F.wav",
+    "wav1": "Session_03_Take_013_Act06_F.wav",
+    "bvh0": "Session_03_Take_013_Act05_F.bvh",
+    "bvh1": "Session_03_Take_013_Act06_F.bvh"
+  },
+  {
+    "session": 4,
+    "take": 2,
+    "wav0": "Session_04_Take_002_Act05_F.wav",
+    "wav1": "Session_04_Take_002_Act07_M.wav",
+    "bvh0": "Session_04_Take_002_Act05_F.bvh",
+    "bvh1": "Session_04_Take_002_Act07_M.bvh"
+  },
+  {
+    "session": 4,
+    "take": 3,
+    "wav0": "Session_04_Take_003_Act05_F.wav",
+    "wav1": "Session_04_Take_003_Act07_M.wav",
+    "bvh0": "Session_04_Take_003_Act05_F.bvh",
+    "bvh1": "Session_04_Take_003_Act07_M.bvh"
+  },
+  {
+    "session": 4,
+    "take": 4,
+    "wav0": "Session_04_Take_004_Act05_F.wav",
+    "wav1": "Session_04_Take_004_Act07_M.wav",
+    "bvh0": "Session_04_Take_004_Act05_F.bvh",
+    "bvh1": "Session_04_Take_004_Act07_M.bvh"
+  },
+  {
+    "session": 4,
+    "take": 5,
+    "wav0": "Session_04_Take_005_Act05_F.wav",
+    "wav1": "Session_04_Take_005_Act07_M.wav",
+    "bvh0": "Session_04_Take_005_Act05_F.bvh",
+    "bvh1": "Session_04_Take_005_Act07_M.bvh"
+  },
+  {
+    "session": 4,
+    "take": 6,
+    "wav0": "Session_04_Take_006_Act05_F.wav",
+    "wav1": "Session_04_Take_006_Act07_M.wav",
+    "bvh0": "Session_04_Take_006_Act05_F.bvh",
+    "bvh1": "Session_04_Take_006_Act07_M.bvh"
+  },
+  {
+    "session": 4,
+    "take": 8,
+    "wav0": "Session_04_Take_008_Act05_F.wav",
+    "wav1": "Session_04_Take_008_Act07_M.wav",
+    "bvh0": "Session_04_Take_008_Act05_F.bvh",
+    "bvh1": "Session_04_Take_008_Act07_M.bvh"
+  },
+  {
+    "session": 4,
+    "take": 9,
+    "wav0": "Session_04_Take_009_Act05_F.wav",
+    "wav1": "Session_04_Take_009_Act07_M.wav",
+    "bvh0": "Session_04_Take_009_Act05_F.bvh",
+    "bvh1": "Session_04_Take_009_Act07_M.bvh"
+  },
+  {
+    "session": 4,
+    "take": 10,
+    "wav0": "Session_04_Take_010_Act05_F.wav",
+    "wav1": "Session_04_Take_010_Act07_M.wav",
+    "bvh0": "Session_04_Take_010_Act05_F.bvh",
+    "bvh1": "Session_04_Take_010_Act07_M.bvh"
+  },
+  {
+    "session": 5,
+    "take": 2,
+    "wav0": "Session_05_Take_002_Act03_F.wav",
+    "wav1": "Session_05_Take_002_Act08_F.wav",
+    "bvh0": "Session_05_Take_002_Act03_F.bvh",
+    "bvh1": "Session_05_Take_002_Act08_F.bvh"
+  },
+  {
+    "session": 5,
+    "take": 3,
+    "wav0": "Session_05_Take_003_Act03_F.wav",
+    "wav1": "Session_05_Take_003_Act08_F.wav",
+    "bvh0": "Session_05_Take_003_Act03_F.bvh",
+    "bvh1": "Session_05_Take_003_Act08_F.bvh"
+  },
+  {
+    "session": 5,
+    "take": 5,
+    "wav0": "Session_05_Take_005_Act03_F.wav",
+    "wav1": "Session_05_Take_005_Act08_F.wav",
+    "bvh0": "Session_05_Take_005_Act03_F.bvh",
+    "bvh1": "Session_05_Take_005_Act08_F.bvh"
+  },
+  {
+    "session": 5,
+    "take": 6,
+    "wav0": "Session_05_Take_006_Act03_F.wav",
+    "wav1": "Session_05_Take_006_Act08_F.wav",
+    "bvh0": "Session_05_Take_006_Act03_F.bvh",
+    "bvh1": "Session_05_Take_006_Act08_F.bvh"
+  },
+  {
+    "session": 5,
+    "take": 7,
+    "wav0": "Session_05_Take_007_Act03_F.wav",
+    "wav1": "Session_05_Take_007_Act08_F.wav",
+    "bvh0": "Session_05_Take_007_Act03_F.bvh",
+    "bvh1": "Session_05_Take_007_Act08_F.bvh"
+  },
+  {
+    "session": 5,
+    "take": 8,
+    "wav0": "Session_05_Take_008_Act03_F.wav",
+    "wav1": "Session_05_Take_008_Act08_F.wav",
+    "bvh0": "Session_05_Take_008_Act03_F.bvh",
+    "bvh1": "Session_05_Take_008_Act08_F.bvh"
+  },
+  {
+    "session": 5,
+    "take": 9,
+    "wav0": "Session_05_Take_009_Act03_F.wav",
+    "wav1": "Session_05_Take_009_Act08_F.wav",
+    "bvh0": "Session_05_Take_009_Act03_F.bvh",
+    "bvh1": "Session_05_Take_009_Act08_F.bvh"
+  },
+  {
+    "session": 5,
+    "take": 10,
+    "wav0": "Session_05_Take_010_Act03_F.wav",
+    "wav1": "Session_05_Take_010_Act08_F.wav",
+    "bvh0": "Session_05_Take_010_Act03_F.bvh",
+    "bvh1": "Session_05_Take_010_Act08_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 11,
+    "wav0": "Session_06_Take_011_Act07_M.wav",
+    "wav1": "Session_06_Take_011_Act09_F.wav",
+    "bvh0": "Session_06_Take_011_Act07_M.bvh",
+    "bvh1": "Session_06_Take_011_Act09_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 12,
+    "wav0": "Session_06_Take_012_Act07_M.wav",
+    "wav1": "Session_06_Take_012_Act09_F.wav",
+    "bvh0": "Session_06_Take_012_Act07_M.bvh",
+    "bvh1": "Session_06_Take_012_Act09_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 14,
+    "wav0": "Session_06_Take_014_Act07_M.wav",
+    "wav1": "Session_06_Take_014_Act09_F.wav",
+    "bvh0": "Session_06_Take_014_Act07_M.bvh",
+    "bvh1": "Session_06_Take_014_Act09_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 15,
+    "wav0": "Session_06_Take_015_Act07_M.wav",
+    "wav1": "Session_06_Take_015_Act09_F.wav",
+    "bvh0": "Session_06_Take_015_Act07_M.bvh",
+    "bvh1": "Session_06_Take_015_Act09_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 16,
+    "wav0": "Session_06_Take_016_Act07_M.wav",
+    "wav1": "Session_06_Take_016_Act09_F.wav",
+    "bvh0": "Session_06_Take_016_Act07_M.bvh",
+    "bvh1": "Session_06_Take_016_Act09_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 18,
+    "wav0": "Session_06_Take_018_Act07_M.wav",
+    "wav1": "Session_06_Take_018_Act09_F.wav",
+    "bvh0": "Session_06_Take_018_Act07_M.bvh",
+    "bvh1": "Session_06_Take_018_Act09_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 20,
+    "wav0": "Session_06_Take_020_Act07_M.wav",
+    "wav1": "Session_06_Take_020_Act09_F.wav",
+    "bvh0": "Session_06_Take_020_Act07_M.bvh",
+    "bvh1": "Session_06_Take_020_Act09_F.bvh"
+  },
+  {
+    "session": 6,
+    "take": 21,
+    "wav0": "Session_06_Take_021_Act07_M.wav",
+    "wav1": "Session_06_Take_021_Act09_F.wav",
+    "bvh0": "Session_06_Take_021_Act07_M.bvh",
+    "bvh1": "Session_06_Take_021_Act09_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 2,
+    "wav0": "Session_07_Take_002_Act01_M.wav",
+    "wav1": "Session_07_Take_002_Act03_F.wav",
+    "bvh0": "Session_07_Take_002_Act01_M.bvh",
+    "bvh1": "Session_07_Take_002_Act03_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 3,
+    "wav0": "Session_07_Take_003_Act01_M.wav",
+    "wav1": "Session_07_Take_003_Act03_F.wav",
+    "bvh0": "Session_07_Take_003_Act01_M.bvh",
+    "bvh1": "Session_07_Take_003_Act03_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 4,
+    "wav0": "Session_07_Take_004_Act01_M.wav",
+    "wav1": "Session_07_Take_004_Act03_F.wav",
+    "bvh0": "Session_07_Take_004_Act01_M.bvh",
+    "bvh1": "Session_07_Take_004_Act03_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 6,
+    "wav0": "Session_07_Take_006_Act01_M.wav",
+    "wav1": "Session_07_Take_006_Act03_F.wav",
+    "bvh0": "Session_07_Take_006_Act01_M.bvh",
+    "bvh1": "Session_07_Take_006_Act03_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 8,
+    "wav0": "Session_07_Take_008_Act01_M.wav",
+    "wav1": "Session_07_Take_008_Act03_F.wav",
+    "bvh0": "Session_07_Take_008_Act01_M.bvh",
+    "bvh1": "Session_07_Take_008_Act03_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 10,
+    "wav0": "Session_07_Take_010_Act01_M.wav",
+    "wav1": "Session_07_Take_010_Act03_F.wav",
+    "bvh0": "Session_07_Take_010_Act01_M.bvh",
+    "bvh1": "Session_07_Take_010_Act03_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 11,
+    "wav0": "Session_07_Take_011_Act01_M.wav",
+    "wav1": "Session_07_Take_011_Act03_F.wav",
+    "bvh0": "Session_07_Take_011_Act01_M.bvh",
+    "bvh1": "Session_07_Take_011_Act03_F.bvh"
+  },
+  {
+    "session": 7,
+    "take": 12,
+    "wav0": "Session_07_Take_012_Act01_M.wav",
+    "wav1": "Session_07_Take_012_Act03_F.wav",
+    "bvh0": "Session_07_Take_012_Act01_M.bvh",
+    "bvh1": "Session_07_Take_012_Act03_F.bvh"
+  }
+]
