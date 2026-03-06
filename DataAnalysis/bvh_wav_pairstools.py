@@ -76,7 +76,9 @@ class Preprocessor:
     #返回所有文件名
     def list_allfiles(self,folder):
         return [f.name for f in Path(folder).iterdir() if f.is_file()]
-    def list_bvhs(self,folder = self.bvh_dir):
+    def list_bvhs(self):
+        folder = self.bvh_dir
         return [f.name for f in Path(folder).iterdir() if f.is_file()]
-    def list_wavs(self,folder = self.wav_dir):
+    def list_wavs(self):
+        folder = self.wav_dir
         return [f.name for f in Path(folder).iterdir() if f.is_file()]
