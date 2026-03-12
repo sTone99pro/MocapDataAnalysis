@@ -114,6 +114,153 @@ class bvhtools:
                 "num_frames": motion.shape[0],
             }
     
+    def get_xyz_and_lower_motion(
+        self,
+        filename,
+        root_name="Hips",
+        lower_joints=None,
+        include_root_rotation=True,
+        strip_prefix=True,
+        dtype=np.float32
+    ):
+        """
+        提取:
+            1) root 的 Position XYZ  -> root_xyz, shape (T, 3)
+            2) 下半身运动特征        -> lower_motion, shape (T, D_lower)
+            3) 拼接后的矩阵          -> combined_motion = [root_xyz, lower_motion]
+
+        参数:
+            filename: BVH 文件名
+            root_name: root joint 名，默认 "Hips"
+            lower_joints: 下半身 joint 名列表；如果为 None，则使用默认列表
+            include_root_rotation:
+                True  -> lower_motion 里包含 root 的旋转（通常建议）
+                False -> lower_motion 不包含 root 的旋转
+            strip_prefix: 是否去掉 joint 名前缀
+            dtype: numpy dtype
+
+        返回:
+            {
+                "file": filename,
+                "root_xyz": np.ndarray,         # (T, 3)
+                "root_xyz_columns": list[str],  # ["Hips_Xposition", ...]
+                "lower_motion": np.ndarray,     # (T, D_lower)
+                "lower_motion_columns": list[str],
+                "combined_motion": np.ndarray,  # (T, 3 + D_lower)
+                "combined_columns": list[str],
+                "num_frames": T
+            }
+        """
+        if lower_joints is None:
+            lower_joints = [
+                "Hips",
+                "LeftUpLeg", "LeftLeg", "LeftFoot", "LeftToeBase",
+                "RightUpLeg", "RightLeg", "RightFoot", "RightToeBase",
+            ]
+
+        data = self.get_motion(
+            filename,
+            as_dict=True,
+            strip_prefix=strip_prefix,
+            dtype=dtype
+        )
+
+        motion_by_joint = data["motion_by_joint"]
+
+        if root_name not in motion_by_joint:
+            raise ValueError(f"找不到 root joint: {root_name}")
+
+        # ===== 1) 提取 root xyz =====
+        root_info = motion_by_joint[root_name]
+        root_channels = root_info["channels"]
+        root_values = root_info["values"]   # shape (T, C_root)
+
+        pos_idx = []
+        pos_cols = []
+
+        for i, ch in enumerate(root_channels):
+            chl = ch.lower()
+            if chl in ("xposition", "yposition", "zposition"):
+                pos_idx.append(i)
+                pos_cols.append(f"{root_name}_{ch}")
+
+        if len(pos_idx) != 3:
+            raise ValueError(
+                f"{root_name} 没有完整的 XYZ position 通道，实际 channels = {root_channels}"
+            )
+
+        root_xyz = root_values[:, pos_idx].astype(dtype, copy=False)
+
+        # 为了固定顺序成 X,Y,Z，再重排一下
+        wanted_order = ["xposition", "yposition", "zposition"]
+        order = []
+        ordered_cols = []
+        for w in wanted_order:
+            for i, ch in enumerate(root_channels):
+                if ch.lower() == w:
+                    order.append(i)
+                    ordered_cols.append(f"{root_name}_{ch}")
+                    break
+
+        root_xyz = root_values[:, order].astype(dtype, copy=False)
+        root_xyz_columns = ordered_cols
+
+        # ===== 2) 提取 lower-body motion =====
+        lower_parts = []
+        lower_columns = []
+
+        for joint_name in lower_joints:
+            if joint_name not in motion_by_joint:
+                continue
+
+            info = motion_by_joint[joint_name]
+            chs = info["channels"]
+            vals = info["values"]   # (T, Cj)
+
+            # root joint 特殊处理：
+            # root 的 position 是目标，不应混进 lower_motion 作为输入
+            # 是否保留 root rotation 由 include_root_rotation 控制
+            if joint_name == root_name:
+                keep_idx = []
+                keep_cols = []
+                for i, ch in enumerate(chs):
+                    chl = ch.lower()
+                    if chl in ("xposition", "yposition", "zposition"):
+                        continue
+                    if include_root_rotation and chl in ("xrotation", "yrotation", "zrotation"):
+                        keep_idx.append(i)
+                        keep_cols.append(f"{joint_name}_{ch}")
+
+                if len(keep_idx) > 0:
+                    lower_parts.append(vals[:, keep_idx])
+                    lower_columns.extend(keep_cols)
+
+            else:
+                lower_parts.append(vals)
+                lower_columns.extend([f"{joint_name}_{ch}" for ch in chs])
+
+        if len(lower_parts) == 0:
+            raise ValueError("没有提取到任何 lower-body motion，请检查 lower_joints 名称是否正确")
+
+        lower_motion = np.concatenate(lower_parts, axis=1).astype(dtype, copy=False)
+
+        # ===== 3) 拼接 =====
+        combined_motion = np.concatenate([root_xyz, lower_motion], axis=1).astype(dtype, copy=False)
+        combined_columns = root_xyz_columns + lower_columns
+
+        return {
+            "file": filename,
+            "root_xyz": root_xyz,
+            "root_xyz_columns": root_xyz_columns,
+            "lower_motion": lower_motion,
+            "lower_motion_columns": lower_columns,
+            "combined_motion": combined_motion,
+            "combined_columns": combined_columns,
+            "num_frames": root_xyz.shape[0],
+        }
+
+
+
     def export_no_finger_bvh(self, filename, out_filename=None, dtype=np.float32):
         bvh_path = Path(self.mypath) / filename
         with open(bvh_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -215,8 +362,9 @@ class bvhtools:
 
         return layout
 
-
+#必须有样板
     def motion_to_bvh(self, template_filename, motion, out_filename, dtype=np.float32):
+
         bvh_path = Path(self.mypath) / template_filename
         with open(bvh_path, "r", encoding="utf-8", errors="ignore") as f:
             text = f.read()

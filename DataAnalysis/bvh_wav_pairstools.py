@@ -2,6 +2,9 @@
 from pathlib import Path
 import re
 import json
+from pathlib import Path
+from collections import Counter
+
 
 class Preprocessor:
     _re_st = re.compile(r"Session[_\-]?(\d+).*Take[_\-]?(\d+)", re.IGNORECASE)
@@ -82,3 +85,29 @@ class Preprocessor:
     def list_wavs(self):
         folder = self.wav_dir
         return [f.name for f in Path(folder).iterdir() if f.is_file()]
+
+    def count_gender_from_bvh_filenames(self,folder):
+        folder = Path(folder)
+
+        counts = Counter()
+        unknown = []
+
+        for p in folder.glob("*.bvh"): #按模式匹配对象
+            stem = p.stem  # 去掉 .bvh #去掉后缀的名字
+            last_tag = stem.split("_")[-1]  # 取最后一段，比如 M / F
+
+            if last_tag in ("M", "F"):
+                counts[last_tag] += 1
+            else:
+                unknown.append(p.name)
+
+        print(f"(M): {counts['M']}")
+        print(f"(F): {counts['F']}")
+        print(f"(Total):{counts['M'] + counts['F']}")
+
+        if unknown:
+            print("\n以下文件最后一段不是 M/F，未计入统计：")
+            for name in unknown:
+                print(name)
+
+        return counts, unknown
